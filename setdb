@@ -1,0 +1,34 @@
+#!/bin/sh
+
+export PYTHONPATH=.
+export ASDEVEL=1
+export ASLOGLEVEL=10
+export PGUSER=postgres
+
+case $1 in
+	local)
+		export PGDATABASE=autosystem
+		export PGHOST=localhost
+		export PGPASSWORD=postgres
+		;;
+	postomais)
+		export PGDATABASE=postomais
+		export PGHOST=localhost
+		export PGPASSWORD=postgres
+		;;
+	teste1)
+		export PGDATABASE=teste1
+		export PGHOST=localhost
+		export PGPASSWORD=postgres
+		;;
+	teste2)
+		export PGDATABASE=teste2
+		export PGHOST=localhost
+		export PGPASSWORD=postgres
+		;;
+	*)
+		export PGDATABASE=$1
+		export PGHOST=database
+		;;
+
+esac

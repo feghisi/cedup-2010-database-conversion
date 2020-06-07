@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>744</width>
+    <height>575</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Debugres</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icone.ico</normaloff>icone.ico</iconset>
+  </property>
+  <property name="inputMethodHints">
+   <set>Qt::ImhNone</set>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QsciScintilla" name="editor">
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="whatsThis">
+       <string/>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QColumnView" name="columnView">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNovo"/>
+   <addaction name="actionAbrir"/>
+   <addaction name="actionSalvar"/>
+   <addaction name="actionSalvarComo"/>
+   <addaction name="separator"/>
+   <addaction name="actionCompilar"/>
+   <addaction name="actionDebugar"/>
+  </widget>
+  <action name="actionNovo">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/imagens/filenew-256.png</normaloff>:/imagens/filenew-256.png</iconset>
+   </property>
+   <property name="text">
+    <string>Novo</string>
+   </property>
+   <property name="iconText">
+    <string>Novo</string>
+   </property>
+   <property name="toolTip">
+    <string>Novo(Ctrl+N)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionAbrir">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/imagens/fileopen-256.png</normaloff>:/imagens/fileopen-256.png</iconset>
+   </property>
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+   <property name="toolTip">
+    <string>Abrir(Ctrl+A)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionSalvar">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/imagens/filesave-256.png</normaloff>:/imagens/filesave-256.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salvar</string>
+   </property>
+   <property name="toolTip">
+    <string>Salvar(Ctrl+S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSalvarComo">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/imagens/filesaveas-256.png</normaloff>:/imagens/filesaveas-256.png</iconset>
+   </property>
+   <property name="text">
+    <string>SalvarComo</string>
+   </property>
+   <property name="iconText">
+    <string>Salvar...</string>
+   </property>
+   <property name="toolTip">
+    <string>Salvar Como(Ctrl+B)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="actionCompilar">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/imagens/artsbuilderexecute-256.png</normaloff>:/imagens/artsbuilderexecute-256.png</iconset>
+   </property>
+   <property name="text">
+    <string>Compilar</string>
+   </property>
+   <property name="toolTip">
+    <string>Compilar(F9)</string>
+   </property>
+   <property name="shortcut">
+    <string>F9</string>
+   </property>
+  </action>
+  <action name="actionDebugar">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/imagens/compfile-256.png</normaloff>:/imagens/compfile-256.png</iconset>
+   </property>
+   <property name="text">
+    <string>Debugar</string>
+   </property>
+   <property name="toolTip">
+    <string>Debugar(F8)</string>
+   </property>
+   <property name="shortcut">
+    <string>F8</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QsciScintilla</class>
+   <extends>QFrame</extends>
+   <header>Qsci/qsciscintilla.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

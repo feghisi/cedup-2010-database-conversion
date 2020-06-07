@@ -1,0 +1,1 @@
+pyrcc4 interface/icons.qrc > interface/icons_rc.py

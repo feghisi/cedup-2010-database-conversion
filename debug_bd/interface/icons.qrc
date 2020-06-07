@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="imagens">
+    <file>artsbuilderexecute-256.png</file>
+    <file>compfile-256.png</file>
+    <file>filenew-256.png</file>
+    <file>filesave-256.png</file>
+    <file>filesaveas-256.png</file>
+    <file>fileopen-256.png</file>
+  </qresource>
+</RCC>
